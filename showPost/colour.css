@@ -1,0 +1,34 @@
+.green{
+   background-color: green;
+
+}
+.green img{
+   filter: grayscale(100%) contrast(1.2);
+   mix-blend-mode: multiply;
+   padding: 10px;
+}
+.column::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out .5s;
+}
+.green::after{
+  background-color: #23278a;
+  mix-blend-mode: lighten;
+}
+.purple{
+   background-color: #88169d;
+}
+.purple img{
+   -webkit-filter: grayscale(100%) contrast(1.2);
+   filter: grayscale(100%) contrast(1.2);
+   mix-blend-mode: lighten;
+}
+.purple::after{
+   mix-blend-mode: hard-light;
+   background: linear-gradient(to top left, #75d775, #321a5b);
+}
